@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Font Links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 
-
     <link rel="stylesheet" href="styles/main.css">
-
     <link rel="icon" href="images/favicon.ico">
     <title>Grateful Dead Video Gallery</title>
 </head>
@@ -20,40 +19,70 @@
         <img id="logoimage" src="images/gdlogo.png">
         <h2>Grateful Dead Vids</h2>
     </header>
-    <main>
         <nav id="nav_list">
             <ul>
-                <li><a href="#vid1">St. Stephen</a></li>
-                <li><a href="#vid2">Branford Marsalis</a></li>
-                <li><a href="#vid3">Box of Rain</a></li>
-                <li><a href="#vid4">Giza, Egypt 9/15, 16/1978</a></li>
+                <li><a href="#vid1">July 26 1987 - Set 2</a></li>
+                <li><a href="#vid2">St. Stephen</a></li>
+                <li><a href="#vid3">Branford Marsalis</a></li>
+                <li><a href="#vid4">Box of Rain</a></li>
+                <li><a href="#vid5">Giza, Egypt 9/15 &amp; 16, 1978</a></li>
             </ul>
         </nav>
-
+    <main>
         <section>
-        <article id="vid1">
-            <h4>St. Stephen at the Playboy Mansion</h4>
-            <div class="videowrapper">
-                <iframe src="https://www.youtube.com/embed/qsL3X6ARgVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         </div>
-        </article>
-        <article id="vid2">
-            <div class="videowrapper">
-                <iframe src="https://www.youtube.com/embed/my-1HAGiytA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         </div>
-        </article>
-        <article id="vid3">
-            <div class="videowrapper">
-                <iframe src="https://www.youtube.com/embed/A9msLwh-wp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         </div>
-        </article>
-        <article id="vid4">
-            <div class="videowrapper">
-                <iframe src="https://www.youtube.com/embed/NuqeM-mbXeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </article>
+            <article id="vid1">
+                <h4>Grateful Dead (4k Remaster) July 26 1987 - Set 2 - PRO SHOT (Charlie Miller SBD)</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/a_GaJphNqVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid2">
+                <h4>St. Stephen - January 1969 on &quot;Playboy After Dark&quot;</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/qsL3X6ARgVI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid3">
+                <h4>Branford Marsalis [1080p60 Remaster] March 29, 1990 Nassau Coliseum [SBD: Miller]</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/my-1HAGiytA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid4">
+                <h4>Take a Step Back &amp; Box Of Rain</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/A9msLwh-wp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+            <article id="vid5">
+                <h4>Ollin Arageed / Fire On The Mountain (Giza, Egypt 9/15 &amp; 16, 1978)</h4>
+                <div class="videowrapper">
+                    <iframe src="https://www.youtube.com/embed/NuqeM-mbXeE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+        </section>
 
-    </section>
+        <div><button onclick="topFunction()" id="cornerbtn" title="Go to top">Return To Top</button></div>
+
+        <script>
+            // When the user scrolls down 800px from the top of the document, show the button
+             window.onscroll = function() {scrollFunction()};
+         
+             function scrollFunction() {
+               if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+                 document.getElementById("cornerbtn").style.display = "block";
+               } else {
+                 document.getElementById("cornerbtn").style.display = "none";
+               }
+             }
+         
+             // When the user clicks on the button, scroll to the top of the document
+             function topFunction() {
+               document.body.scrollTop = 0;
+               document.documentElement.scrollTop = 0;
+             }
+         </script>
+
     </main>
     <footer>
         <p>&copy; 2022 Michael Roberts Productions</p>
