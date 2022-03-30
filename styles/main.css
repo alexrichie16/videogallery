@@ -109,6 +109,10 @@ article h4 {
 .caption p {
     margin-bottom: 10px;
 }
+.caption ul li {
+    margin-left: 2em;
+    line-height: 30px;
+}
 blockquote {
     margin: 10px 1.5em;
     border-left: 3px solid white;
